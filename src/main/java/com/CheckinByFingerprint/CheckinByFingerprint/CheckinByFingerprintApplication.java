@@ -1,0 +1,13 @@
+package com.CheckinByFingerprint.CheckinByFingerprint;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CheckinByFingerprintApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CheckinByFingerprintApplication.class, args);
+	}
+
+}

@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "CheckInByFingerPrint"
+    logging:
+      level:
+        root: DEBUG
+  datasource:
+    url: jdbc:mysql://localhost:3306/hhtm_nhan_dien_van_tay
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
