@@ -17,9 +17,9 @@ public class FingerprintLabel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-//    @ManyToOne // Quan hệ nhiều-đến-một với User
-//    @JoinColumn(name = "user_id") // Khóa ngoại tham chiếu đến bảng User
-//    private User user;
+    @ManyToOne // Quan hệ nhiều-đến-một với User
+    @JoinColumn(name = "user_id") // Khóa ngoại tham chiếu đến bảng User
+    private User user;
 
     private String fingerprintImg;
     private LocalDateTime createAt;

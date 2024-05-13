@@ -1,9 +1,7 @@
 package com.CheckinByFingerprint.CheckinByFingerprint.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Set;
 
@@ -11,15 +9,15 @@ import java.util.Set;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter @Setter
 // Mẫu Training
 public class TrainingTemplate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String linkImage;
-    private StatusTraining statusTraining;
+    private String statusTraining;
     private String name;
-
     @ManyToOne
     private User user;
 
